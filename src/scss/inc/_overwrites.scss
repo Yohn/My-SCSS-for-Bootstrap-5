@@ -1,0 +1,64 @@
+//! !! fixes
+.list-group-item.active {
+	z-index: 2;
+	color: var(--bs-dark-text-emphasis0);
+	background-color: var(--bs-primary-border-subtle);
+	border-color: var(--bs-tertiary-bg);
+}
+[data-bs-theme="dark"] {
+	& .table-warning {
+		--bs-table-color:var(--bs-secondary-text-emphasis); /*var(--bs-dark-text-emphasis);*/
+		--bs-table-bg:var(--bs-secondary-bg-subtle); /*var(--bs-secondary-border-subtle);*/
+		--bs-table-border-color:var(--bs-dark-border-subtle); /*var(--bs-emphasis-color);*/
+		--bs-table-hover-bg:var(--bs-dark-bg-subtle); /*var(--bs-dark-border-subtle);*/
+		--bs-table-hover-color:var(--bs-dark-text-emphasis); /*var(--bs-dark-text-emphasis);*/
+		border-color: var(--bs-table-border-color);
+	}
+}
+.yohns-tip {
+	--bs-tooltip-bg: var(--bs-primary-bg-subtle);
+	--bs-tooltip-color: var(--bs-white);
+}
+textarea, pre {
+	-moz-tab-size : 4;
+		-o-tab-size : 4;
+			 tab-size : 4;
+}
+::-moz-selection {
+	background: #ff08d3;
+	color: #000;
+}
+
+::selection {
+	background: #ff08d3;
+	color: #000;
+}
+* {
+	scrollbar-color: $primary #ff08d3 ;
+	scrollbar-gutter: stable;
+	scrollbar-width: thin;
+}
+// flip scroll to other side
+.yo-left-scroll {
+	transform: scaleX(-1);
+	overflow-y: auto;
+	max-height: 800px;
+	scrollbar-color: #639dd4 #333;
+}
+.yo-left-scroll > div {
+	transform: scaleX(-1);
+}
+/* Set the size for all SVGs in the navbar */
+.navbar svg {
+	width: 1.5rem; /* Adjust to your preferred size */
+	height: 1.5rem
+}
+.input-group.color-sides > .form-control.form-range {
+	width: 70%;
+	height: inherit;
+}
+.input-group.color-sides > .form-control:focus,
+.input-group.color-sides > .form-control.form-range:focus {
+	border: var(--bs-border-width) solid var(--bs-border-color);
+	box-shadow: none !important;
+}

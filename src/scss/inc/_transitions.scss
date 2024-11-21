@@ -1,0 +1,43 @@
+ // spins in 	- translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+ // zoom 			- scale(.8);
+ $modal-fade-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+ $transition-collapse-width:	 width .35s ease-out !default;
+//$modal-fade-transform:		translate(0, -50px) !default;
+//$modal-show-transform:		none !default;
+//$modal-transition:				transform .3s ease-out !default;
+//$modal-scale-transform:		scale(1.02) !default;
+
+//$icon-link-icon-transition:	 .2s ease-in-out transform !default;
+//$icon-link-icon-transform:		translate3d(.25em, 0, 0) !default;
+
+//$transition-base:						 all .2s ease-in-out !default;
+//$transition-fade:						 opacity .15s linear !default;
+//// scss-docs-start collapse-transition
+//$transition-collapse:				 height .35s ease !default;
+
+//// scss-docs-end collapse-transition
+
+//$btn-transition:										 color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+//$pagination-transition:							color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+//$btn-transition:									color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+//$pagination-transition:					 color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+//$form-check-transition:					 null !default;
+//$form-check-input-active-filter:	brightness(90%) !default;
+//$form-select-transition:					$input-transition !default;
+
+//$input-transition:								border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+//$nav-link-transition:						 color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
+//$navbar-toggler-transition:			 box-shadow .15s ease-in-out !default;
+//$navbar-toggler-transition:			 box-shadow .15s ease-in-out !default;
+
+//$accordion-transition:						$btn-transition, border-radius .15s ease !default;
+//$progress-bar-transition:				 width .6s ease !default;
+
+//$carousel-control-transition:		 opacity .15s ease !default;
+//$carousel-indicator-transition:	 opacity .6s ease !default;
+//$carousel-transition-duration:		.6s !default;
+//$carousel-transition:						 transform $carousel-transition-duration ease-in-out !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+//$offcanvas-transition-duration:		 .3s !default;

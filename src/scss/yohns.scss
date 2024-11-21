@@ -1,0 +1,52 @@
+
+
+@import "./inc/icons";
+@import "../../node_modules/bootstrap/scss/functions";
+
+// I put the offcanvas on top of the modals
+$zindex-modal-backdrop:			1040;
+$zindex-modal:							1045;
+$zindex-offcanvas-backdrop:	1050;
+$zindex-offcanvas:					1055;
+
+$offcanvas-horizontal-width: 500px;
+
+$primary: #a6d601; // compile
+$enable-shadows: true;
+$enable-rfs: false;
+$enable-deprecation-messages: false;
+$enable-gradients: true;
+$enable-negative-margins: true;
+
+@import "./inc/transitions";
+
+$border-widths: ( 1: 1px, 2: 2px, 3: 3px, 4: 4px, 5: 5px, 10: 10px, 20: 20px);
+$position-values: ( 0: 0, 25: 25%, 50: 50%, 75: 75%, 100: 100%);
+
+@import "./inc/bs_vars_maps_mix_util.scss";
+@import "./inc/maps"; // new classes, add ons
+@import "./inc/bs_components";
+@import "./inc/keyframes";
+
+@import '../../node_modules/@tkrotoff/bootstrap-floating-label/src/bootstrap-floating-label';
+@import './plugins/dselect.scss';
+@import "./inc/overwrites";
+@import "./inc/tricks";
+
+//! ! Start Sortables
+//.sortable-ghost {}
+//.sortable-chosen {}
+.sortable-drag {cursor: grabbing;}
+//! /end Sortables
+
+//! !! New Animations
+.offcanvas.show {
+	animation: bounceInLeft 0.3s forwards; /* Opening animation */
+}
+
+.offcanvas:not(.show) {
+	animation: bounceOut 0.3s forwards; /* Closing animation */
+}
+.row [class*='col-'] {
+	transition: all 400ms ease;
+}

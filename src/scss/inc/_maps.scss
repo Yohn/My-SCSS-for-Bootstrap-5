@@ -1,0 +1,97 @@
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"cursor": (
+			property: cursor,
+			class: cursor,
+			values: auto pointer grab grabbing move,
+		),
+		"max-width": (
+			property: max-width,
+			class: mw,
+			values: (
+				10: 10%,
+				25: 25%,
+				50: 50%,
+				75: 75%,
+				100: 100%
+			)
+		),
+		"viewport-width": (
+			property: width,
+			class: vw,
+			values: (
+				10: 10vw,
+				25: 25vw,
+				50: 50vw,
+				75: 75vw,
+				100: 100vw
+			)
+		),
+		"min-viewport-width": (
+			property: min-width,
+			class: min-vw,
+			values: (
+				10: 10vw,
+				25: 25vw,
+				50: 50vw,
+				75: 75vw,
+				90: 92vw,
+				100: 100vw
+			)
+		),
+		"max-height": (
+			property: max-height,
+			class: mh,
+			values: (
+				10: 10%,
+				25: 25%,
+				50: 50%,
+				75: 75%,
+				100: 100%
+			)
+		),
+		"viewport-height": (
+			property: height,
+			class: vh,
+			values: (
+				10: 10vh,
+				25: 25vh,
+				50: 50vh,
+				75: 75vh,
+				100: 100vh
+			)
+		),
+		"min-viewport-height": (
+			property: min-height,
+			class: min-vh,
+			values: (
+				10: 10vh,
+				25: 25vh,
+				50: 50vh,
+				75: 75vh,
+				90: 90vh,
+				100: 100vh
+			)
+		),
+		"shadow": (
+			property: box-shadow,
+			class: shadow,
+			values: (
+				none: none,
+				null: var(--#{$prefix}box-shadow),
+				sm: var(--#{$prefix}box-shadow-sm),
+				lg: var(--#{$prefix}box-shadow-lg),
+				sm-w: 0 .125rem .25rem rgba($white, .075),
+				lg-w: 0 1rem 3rem rgba($white, .175),
+				sm-w-in: inset 0 .125rem .25rem rgba($white, .075),
+				lg-w-in: inset 0 1rem 3rem rgba($white, .175),
+				sm-b-in: inset var(--#{$prefix}box-shadow-sm),
+				lg-b-in: inset var(--#{$prefix}box-shadow-lg),
+				xl-b-in: inset 0 0 1.25rem rgba(0,0,0,.5),
+				xl-w-in: inset 0 0 1.25rem rgba(255,255,255,.5),
+			)
+		)
+	)
+);
